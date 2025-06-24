@@ -1,6 +1,6 @@
 nav {
-  width: 100%;
   height: 64px;
+  width: 100%;
   background: #1c4587 linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, #1c4587 25%, #1c4587 75%, rgba(0, 0, 0, 1) 100%);
 }
 
@@ -12,14 +12,13 @@ ul {
 
 li {
   display: flex;
-  margin-right: 8px;
   height: 65%;
   align-items: center;
   justify-content: center;
 }
 
 li:hover {
-  background-color: #1c4587;
+  background-color: royalblue;
   cursor: pointer;
 }
 
@@ -27,14 +26,14 @@ li:hover {
   color: white;
   text-decoration: none;
   font-size: 20pt;
-  margin-left: 20px;
+  margin-left: 0;
 }
 
 .link {
   color: white;
   text-decoration: none;
   font-size: 16pt;
-  margin: 12px;
+  padding: 12px;
 }
 
 .nav-container {
@@ -43,7 +42,7 @@ li:hover {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  height: 100%;
+  height: 64px;
 }
 
 .nav-links {
@@ -52,3 +51,47 @@ li:hover {
   justify-content: space-between;
   align-items: center;
 }
+
+.nav-button {
+  color: white;
+  background: none;
+  text-decoration: none;
+  font-size: 16pt;
+  padding: 12px;
+  border: none;
+  min-width: 100px;
+}
+
+.nav-button:hover {
+  background: none;
+  cursor: pointer;
+}
+
+.nav-menu {
+  position: relative;
+  display: inline-block;
+}
+
+.nav-menu-content {
+  display: none;
+  position: absolute;
+  background-color: #1c4587;
+  min-width: 100px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.nav-menu-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.nav-menu-content a:hover {
+  background-color: royalblue;
+}
+
+.nav-menu:hover .nav-menu-content { display: block; }
+
+.nav-menu:hover .nav-button {background-color: black;}

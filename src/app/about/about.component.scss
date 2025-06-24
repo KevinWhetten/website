@@ -1,17 +1,19 @@
-﻿.row {
+﻿@media screen and (min-width: 600px) {
+.row {
   display: flex;
-}
+  }
 
-.portrait {
-  width: 47.5%;
+  .portrait {
+    width: 47.5%;
+  }
+
+  .basic-info {
+    margin-left: 5%;
+    width: 47.5%;
+    text-align: left;
+  }
 }
 
 .portrait img {
   width: 100%;
-}
-
-.basic-info {
-  margin-left: 5%;
-  width: 47.5%;
-  text-align: left;
 }
